@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Pesquisa de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/ska-75-marul-ce" rel="stylesheet">
+</head>
+
+<body >
+   <h1 class="font">Cadastro e Pesquisa de Jogos</h1>
+    <div id="cadastro">
+        <h2 class="font">Cadastro de Jogo</h2>
+        <form id="cadastroForm">
+            <label class="font" for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label class="font" for="plataform">Plataforma:</label>
+            <input type="text" id="plataform" name="plataform" required><br>
+
+            <button class="button" type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+ <div id="pesquisa">
+        <h2 class="font">Pesquisa de Jogo</h2>
+        <form id="pesquisaForm">
+            <label class="font" for="searchId">ID do Jogo:</label>
+            <input type="text" id="searchId" name="searchId"><br>
+
+            <button class="button" type="button" onclick="pesquisarJogo()">Pesquisar</button>
+        </form>
+        <div class="font" id="resultadoPesquisa"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
